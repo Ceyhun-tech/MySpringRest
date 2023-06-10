@@ -22,7 +22,7 @@ public class Kitab {
     @Column(name = "kni",nullable = false, unique = false)
     private Integer kni;
 
-  @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+  @ManyToMany
     @JoinTable(name = "KY",
             joinColumns = @JoinColumn(name = "kid"),
             inverseJoinColumns = @JoinColumn(name = "id"))
