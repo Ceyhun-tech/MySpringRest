@@ -12,6 +12,6 @@ import java.util.List;
 public interface KitabRepo extends JpaRepository<Kitab, Integer> {
     @Query("SELECT k FROM Kitab k JOIN k.yazici y")
 
-    public List<Kitab> findAllP();
+    public List<Kitab> findAll();
 
 }
