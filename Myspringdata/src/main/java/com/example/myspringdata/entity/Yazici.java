@@ -22,8 +22,8 @@ public class Yazici {
     private String soyad;
     @Column(name = "telnom", unique = true)
     private Integer telnom;
-    /*@ManyToMany(mappedBy = "yazici")
-    List<Kitab> kitab;*/
+    @ManyToMany(mappedBy = "yazici")
+    List<Kitab> kitab;
     public Yazici() {
 
     }
